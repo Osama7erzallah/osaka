@@ -1,0 +1,117 @@
+:root{
+--mainColor:#ff206e; 
+}
+
+.head{
+    background-image:url(../image/bg_osaka.jpg) ;
+background-size: cover;
+background-position: center;
+}
+.head .view{
+    color: var(--mainColor);
+
+}
+.icon{
+    width: 3rem;
+    height: 3rem;
+    transition:background-color 1s ;
+}
+.item .icon:hover{
+background-color: var(--mainColor) !important;
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show{
+    color: var(--mainColor);
+}
+.nav-link:focus,
+.nav-link:hover{
+    color: var(--mainColor);
+}
+
+/* about */
+
+.about{
+    background-image: url(../image/light_dot.jpg);
+}
+
+ .title h2{
+    font-size: 4rem;
+    letter-spacing: 10px;
+    color: #cacaca;
+        font-weight: 900;
+}
+ .title h3 {
+font-size: 2rem;
+        font-weight: 900;
+        }
+
+                .about .row p:nth-of-type(1){
+                    color: var(--mainColor);
+                }
+
+                                /* Services */
+
+                                .Services{
+                                    background-image: url(../image/dark_dot.jpg);
+                                }
+                .Services .title h2{
+                    color: #393737;
+                }
+                                .Services .title h3 {
+                                    color: #fff;
+                                }
+
+.Services .item h3::after{
+
+    content: '';
+    position: absolute;
+    top: 85px;
+    left: 50%;
+    transform: translate(-50%);
+    width: 9%;
+    height: 6px;
+    background-color: var(--mainColor);
+    transition: width 1s;
+}
+
+.Services .item:hover h3:after {
+width: 33%;
+
+}
+
+.Services .item{
+        border-radius: 15px;
+}
+
+
+.client img{
+    width: 120px;
+    height: 120px;
+ 
+}
+
+.carousel-indicators [data-bs-target]{
+    height: 30px;
+    border-radius: 50%;
+    text-indent: 0;
+}
+.carousel-indicators [data-bs-target]  img {
+height: 30px;
+width: 30px;
+}
+
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+    color: var(--mainColor);
+    border: none;
+    font-weight: 500;
+}
+.nav-tabs .nav-link{
+    border: none;
+color: black;
+
+}
+.card{
+    margin: auto;
+}
